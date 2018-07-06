@@ -61,7 +61,7 @@ function getPosition(position)
 {
     var location = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
     var mapOptions = {
-        zoom : 12,
+        zoom : 20,
         center : location,
         mapTypeId : google.maps.MapTypeId.ROADMAP
     };
@@ -117,9 +117,10 @@ function catchError(error) {
 </script>
 </head>
 <body onload="getLocation()">
-<div id="map-holder"></div>
+
 <button onclick="watchLocation()">Start Watching</button>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <button onclick="stopWatch()">Stop Watching</button>
+<div id="map-holder"></div>
 </body>
 </html>
